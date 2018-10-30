@@ -1,19 +1,16 @@
 import React from 'react'
-import { StateContext } from '../redux'
-import { paths } from '../context'
+import TextField from './controls/TextField'
+import { useInputState } from '../state'
 
-class Address extends React.PureComponent {
+const Address = () => {
+  const streetState = useInputState()
 
-  render() {
-    const { state } = this.context
-    return (
-      <div>
-        <span>{state.getIn(paths.name.first.get())}</span>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <h5>Address</h5>
+      <TextField label='Street' {...streetState} />
+    </div>
+  )
 }
-
-Address.contextType = StateContext
 
 export default Address
