@@ -3626,6 +3626,13 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
+fetch-suspense@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/fetch-suspense/-/fetch-suspense-1.0.1.tgz#da9ac59f11a9ebc7529275adfcd221108544c273"
+  integrity sha512-6PDKlt+UByT/xeT0Ng/3RAauHwpo0kSB0w+09oRH6EOC4f+HAf9mY2WaE5NNoNWet3jn4xQSkLLt6AdXAB/PxA==
+  dependencies:
+    deep-equal "^1.0.1"
+
 figgy-pudding@^3.1.0, figgy-pudding@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
@@ -6718,6 +6725,11 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
+
+perpetual-js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/perpetual-js/-/perpetual-js-1.0.2.tgz#ffd4ba52ee329f907c66b9621406efbe9eec83e4"
+  integrity sha512-FVghMqT9DjjvXK3goUfweWhkPrmi0h17iA0P7V0u0uRxvwkD+F1FhHSxKVeG4anC4pSbQABKtTl/BUS4NUAyig==
 
 pify@^2.0.0:
   version "2.3.0"

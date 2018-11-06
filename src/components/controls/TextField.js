@@ -1,20 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
-const TextField = ({ label, value, onChange }) => {
-  const [_value, setValue] = useState(value)
-
-  const handleChange = ({ target: { value } }) => {
-    setValue(value)
-    onChange(value)
-  }
-
+const TextField = ({ label, ...rest }) => {
   return (
     <div>
       <label>{label}</label>
       <input
-        value={_value}
-        onChange={handleChange}
+        {...rest}
       />
     </div>
   )

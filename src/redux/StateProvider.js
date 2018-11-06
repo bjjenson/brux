@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { Map } from 'immutable'
+import { Map } from 'perpetual-js'
 
 export const StateContext = React.createContext({
   state: Map(),

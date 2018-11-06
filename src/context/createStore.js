@@ -1,4 +1,4 @@
-import { Map } from 'immutable'
+import { Map } from 'perpetual-js'
 import { paths } from './paths'
 
 export const store = Map()

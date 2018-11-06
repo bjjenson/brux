@@ -1,18 +1,18 @@
 import React from 'react'
 import TextField from './controls/TextField'
-import { StateConsumer, useReduxInput } from '../redux'
+import { StateConsumer, useBruxValue } from '../redux'
 import { paths } from '../context'
 
 const Name = () => {
-  const firstNameProvider = useReduxInput(paths.name.first.get())
-  const lastNameProvider = useReduxInput(paths.name.last.get())
+  const firstNameState = useBruxValue(paths.name.first.get())
+  const lastNameState = useBruxValue(paths.name.last.get())
 
   return (
     <StateConsumer>
       {({ state, setState }) =>
         <>
-          <TextField label='First' {...firstNameProvider} />
-          <TextField label='Last' {...lastNameProvider} />
+          <TextField label='First' {...firstNameState.cnx} />
+          <TextField label='Last' {...lastNameState.cnx} />
         </>}
     </StateConsumer>
   )
