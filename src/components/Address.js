@@ -1,6 +1,6 @@
 import React from 'react'
 import TextField from './controls/TextField'
-import { useBruxValue } from '../redux'
+import { useBrix } from '../brix'
 import { paths, fetchAddress } from '../context'
 
 const Address = () => {
@@ -10,7 +10,7 @@ const Address = () => {
   // }
 
   // state.attach(fetchAddress)
-  const streetState = useBruxValue(paths.address.street.get())
+  const streetState = useBrix(paths.address.street.get(), '')
   // console.log('street', streetState)
   return (
     <div>

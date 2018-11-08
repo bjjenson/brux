@@ -3,7 +3,7 @@ import './App.css';
 import Name from './components/Name'
 import Summary from './components/Summary'
 import ExtraPanel from './components/ExtraPanel'
-import { StateProvider } from './redux'
+import { StateProvider } from './brix'
 import { store } from './context/createStore'
 
 class App extends Component {

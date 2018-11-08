@@ -18,8 +18,12 @@ export const useWorker = (key, worker) => {
         .then(response => {
           workedItem.result = response
           return response
+        }, rejection => {
+          console.log('rejected', rejection)
+          workedItem.error = rejection
         }).catch(err => {
           workedItem.error = err
+          console.log('caught', err)
         }),
     }
     cache[key] = workedItem

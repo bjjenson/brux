@@ -1,5 +1,5 @@
 import React from 'react'
-import { StateContext } from '../redux'
+import { StateContext } from '../brix'
 import { paths } from '../context'
 
 class Summary extends React.PureComponent {

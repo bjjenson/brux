@@ -1,11 +1,11 @@
 import React from 'react'
 import TextField from './controls/TextField'
-import { StateConsumer, useBruxValue } from '../redux'
+import { StateConsumer, useBrix } from '../brix'
 import { paths } from '../context'
 
 const Name = () => {
-  const firstNameState = useBruxValue(paths.name.first.get())
-  const lastNameState = useBruxValue(paths.name.last.get())
+  const firstNameState = useBrix(paths.name.first.get())
+  const lastNameState = useBrix(paths.name.last.get())
 
   return (
     <StateConsumer>

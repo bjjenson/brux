@@ -1,0 +1,2 @@
+1. Handle errors from worker in suspense
+2. Verify lists
